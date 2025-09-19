@@ -1,4 +1,4 @@
-let elt = document.getElementById('aboutMyself')
+let elt = document.getElementById('aboutMyselfTitle')
 let elt2 = document.getElementById('language')
 let elt3 = document.getElementById('myProjects')
 
