@@ -1,4 +1,3 @@
-<!--color pallette : https://coolors.co/palette/003049-d62828-f77f00-fcbf49-eae2b7-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./Script/script.js" defer></script>
     <link rel="stylesheet" href="./Style/style.css">
     <title>Portfolio</title>
 </head>
 
-<body class="bg-sky-500 text-white">
-    <div class="flex justify-center content-center text-center">
-        <h1 id="home" class="text-8xl p-3 m-3">Welcome</h1>
-    </div>
-    <nav class="">
-        <ul class="flex justify-end p-6">
+<body class="bg-[#003049] text-white">
+    <nav class="pt-5 pb-5">
+        <ul class="flex justify-end p-6 cursor-default">
             <li>
-                <a class="rounded p-3 pt-6 pb-6 hover:bg-indigo-300 duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-indigo-300 via-indigo-400 to-indigo-500 hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#home">Home</a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-indigo-300 duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-indigo-300 via-indigo-400 to-indigo-500 hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#aboutMyself">About</a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-indigo-300 duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-indigo-300 via-indigo-400 to-indigo-500 hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
-                    href="#myProjects"></a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-indigo-300 duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-indigo-300 via-indigo-400 to-indigo-500 hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                    href="#myProjects">My Projects</a>
+                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#Contact">Contact</a>
             </li>
         </ul>
     </nav>
+    <div class="flex justify-center content-center text-center">
+        <h1 id="home" class="animation_entrance text-8xl pt-15 h-[100vh]">Welcome</h1>
+    </div>
     <div class="justify-center content-center text-center">
         <h1 id="aboutMyself" class="text-6xl p-3 m-3">About Myself</h1>
         <p>Hello, I'm Delacoudre Willelm. I am a student in computer science working on many project like a chess game
@@ -35,17 +35,31 @@
         <p>I started learning computer science at college when I discovered python. Then I saw other langages like HTML,
             CSS an JavaScript</p>
         <p>Now, you can see all the languages I have seen at the section <a href="#language">here</a></p>
+        <p></p>
     </div>
-    <div>
-        <h1 class="" id="myProjects">My Projects</h1>
+    <div class="content-center text-center justify-center">
+        <h1 class="flex-none text-6xl" id="myProjects">My Projects</h1>
         <!-- mettre gribouille, quelque projet js, direction game, et peut etre le jeu chess -->
+        <div class="grid grid-cols-3 gap-4 content-center text-center justify-center">
+            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400"
+                src="./image/placeholder.jpg" alt="Gribouille">
+            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400"
+                src="./image/placeholder.jpg" alt="Gribouille">
+            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400"
+                src="./image/placeholder.jpg" alt="Gribouille">
+            <img class="col-span-1 col-start-2   w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400"
+                src="./image/placeholder.jpg" alt="Gribouille">
+        </div>
+        <div id ="language" class="justify-center content-center text-center text-6xl p-3 m-3">
+            <h1>My languages</h1>
+        </div>
     </div>
 
 
 
 
 </body>
-<footer class="fixed bottom-0 w-full bg-gray-700 text-justify-center content-center text-center p-2">
+<footer class="bottom-0 w-full bg-gray-700 text-justify-center content-center text-center p-2">
     <p id="Contact">Contact me at:
 
 </html>
