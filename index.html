@@ -10,25 +10,29 @@
     <title>Portfolio</title>
 </head>
 
-<body class="bg-[#003049] text-white">
+<body class="bg-[#003049] text-white backdrop-blur-md">
     <nav class="pt-5 pb-5">
         <ul class="flex justify-end p-6 cursor-default">
             <li>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-4 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#home">Home</a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-4 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#aboutMyself">About</a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
-                    href="#myProjects">My Projects</a>
-                <a class=" rounded p-3 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                <a class=" rounded p-4 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                    href="#language">Languages</a>
+                <a class=" rounded p-4 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
+                    href="#myProjects">Projects</a>
+                <a class=" rounded p-4 pt-6 pb-6 hover:bg-[#7f908f] duration-500 hover:duration-500 hover:bg-gradient-to-t hover:ease-in-out from-[#fdf0d5] via-[#7f908f] to-[#003049] hover:scale-125 hover:shadow-lg hover:shadow-gray-400 "
                     href="#Contact">Contact</a>
             </li>
         </ul>
     </nav>
     <div class="flex justify-center content-center text-center">
-        <h1 id="home" class="animation_entrance text-8xl pt-15 h-[100vh]">Welcome</h1>
+        <div class="content-center text-center justify-center">
+            <h1 id="home" class="animation_entrance text-8xl pt-15 h-[100vh]">Welcome</h1>
+        </div>
     </div>
-    <div  id="aboutMyself" class="h-[100vh] justify-center text-center">
+    <div id="aboutMyself" class="h-[100vh] justify-center text-center">
         <h1 id="aboutMyselfTitle" class="text-6xl p-3 m-3">About Myself</h1>
         <p>Hello, I'm Delacoudre Willelm. I am a student in computer science working on many project like a chess game
             and others.</p>
@@ -37,8 +41,58 @@
         <p>Now, you can see all the languages I have seen at the section <a href="#language">here</a></p>
         <p></p>
     </div>
-    <div id="language" class="justify-center content-center text-center text-6xl p-3 m-3">
-        <h1>My languages</h1>
+    <div id="language" class="h-[100vh] justify-center content-center text-center p-3 m-3">
+        <h1 class="text-6xl">My languages</h1>
+        <table class="border-1 text-lg text-left w-[100%]">
+            <thead>
+                <tr class="border-1">
+                    <th class="">Procedual</th>
+                    <th>OOP</th>
+                    <th>Database</th>
+                    <th>Web</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>C</th>
+                <th>Java</th>
+                <th>SQL (Oracle)</th>
+                <th>HTML</th>
+            </tr>
+            <tr>
+                <th>Python</th>
+                <th>C#</th>
+                <th>PLSQL (Oracle)</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>MySQL / MariaDB</th>
+                <th>JavaScript</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>TailwindCSS</th>
+            </tr>
+        </table>
+        <table class="border-1 text-center text-lg w-[100%]">
+            <thead>
+                <tr class ="">
+                    <th>OTHER KNOWLEDGE</th>
+                </tr>
+            </thead>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+            </tr>
+
+        </table>
     </div>
     <div class="content-center text-center justify-center">
         <h1 class="flex-none text-6xl" id="myProjects">My Projects</h1>
