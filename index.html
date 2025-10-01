@@ -10,7 +10,7 @@
     <title>Portfolio</title>
 </head>
 
-<body class="bg-[#003049] text-white backdrop-blur-md">
+<body class="bg-radial from-[#004d5a] from-40% to-[#00141e] text-white backdrop-blur-md">
     <nav class="pt-5 pb-5 text-lg">
         <ul class="flex justify-end p-6 cursor-default">
             <li>
@@ -27,13 +27,23 @@
             </li>
         </ul>
     </nav>
-    <div class="flex justify-center content-center text-center">
-        <div class="content-center text-center justify-center">
-            <h1 id="home" class="animation_entrance text-8xl pt-15 lg:h-[100vh]">Welcome</h1>
+    <div class="flex flex-col items-center text-center lg:h-[100vh] content-start pt-5">
+        <div class="text-center justify-center">
+            <h1 id="home" class="animation_entrance text-8xl">Welcome</h1>
+        </div>
+        <div id="welcomeDiv"
+            class="hidden border-1 border-sky-300 drop-shadow-2xl drop-shadow-white/60 shadow-xl shadow-sky-400 items-center justify-center mt-10 p-2 rounded-2xl">
+            <div>
+                <h1>Web Developper | Software Developper</h1>
+                <p></p>
+            </div>
+            <div>
+
+            </div>
         </div>
     </div>
     <div id="animaDiv" class="">
-        
+
     </div>
     <div id="aboutMyself" class="h-[100vh] w-full justify-center text-center">
         <h1 id="aboutMyselfTitle" class="text-6xl p-3 m-3 mb-25">About Myself</h1>
@@ -105,18 +115,26 @@
 
         </table>
     </div>
-    <div class="content-center text-center justify-center ">
-        <h1 class="flex-none text-6xl " id="myProjects">My Projects</h1>
+    <div class="content-center text-center justify-center ml-4 mr-4">
+        <h1 class="flex-none text-6xl mb-5" id="myProjects">My Projects</h1>
         <!-- mettre gribouille, quelque projet js, direction game, et peut etre le jeu chess -->
-        <div class="grid grid-cols-3 gap-4 content-center text-center justify-center ">
-            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 "
-                src="./image/placeholder.jpg " alt="Gribouille ">
-            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 "
-                src="./image/placeholder.jpg " alt="Gribouille ">
-            <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 "
-                src="./image/placeholder.jpg " alt="Gribouille ">
-            <img class="col-span-1 col-start-2 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 "
-                src="./image/placeholder.jpg " alt="Gribouille ">
+        <div class="grid grid-cols-3 gap-4 content-center text-center justify-center">
+            <a href="#"><img
+                    class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 hover:cursor-pointer"
+                    src="./image/placeholder.jpg " alt="Gribouille ">
+            </a>
+            <a href="#">
+                <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 hover:cursor-pointer"
+                    src="./image/placeholder.jpg " alt="Gribouille ">
+            </a>
+            <a href="#">
+                <img class="col-span-1 w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 hover:cursor-pointer"
+                    src="./image/placeholder.jpg " alt="Gribouille ">
+            </a>
+            <a href="#" class="col-span-1 col-start-2">
+                <img class="w-100 h-50 m-3 p-3 rounded hover:scale-110 duration-500 hover:duration-500 hover:shadow-lg hover:shadow-gray-400 hover:cursor-pointer"
+                    src="./image/placeholder.jpg " alt="Gribouille ">
+            </a>
         </div>
     </div>
 
